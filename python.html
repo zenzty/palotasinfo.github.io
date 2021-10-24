@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python</title>
+    <link rel="stylesheet" href="css/python.css" />
+    <link rel="icon" type="image/png" sizes="16×16" href="images/tabicon.png" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="index.html">Palotas.<span>info</span></a>
+
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="images/menu.svg"
+          alt="Navigáció megnyitása"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="images/exit.svg"
+            alt="Navigáció bezárása"
+          />
+          <ul class="primary-nav">
+            <li><a href="index.html">Főoldal</a></li>
+            <li class="current"><a href="python.html">Python</a></li>
+            <li><a href="html.html">HTML</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="tartalom">
+      <img
+        class="pythonlogo"
+        src="images/Python LOGO.svg"
+        alt="Python Logója"
+      />
+      <h1>Python Projektek</h1>
+      <p>
+        A letöltés gombra kattintva tudod letölteni a feladatsorhoz tartozó
+        fájlokat. (PDF, Forrás, .py stb..)
+      </p>
+    </div>
+
+    <div class="letoltesek">
+      <ul>
+        <a href="data/Ötszáz.rar" download
+          ><img
+            class="elsoletoltes"
+            src="images/letoltes.svg"
+            alt="Letöltés gomb"
+        /></a>
+        <a href="data/Ötszáz.rar" download><p class="elsogomb">Letöltés</p></a>
+        <li>
+          ㅤㅤㅤÖtszáz
+          <!-- <p class="otszaz">(2016. május)</p> -->
+        </li>
+        <a href="data/Céges autók.rar"
+          ><img
+            class="letoltesgomb"
+            src="images/letoltes.svg"
+            alt="Letöltés gomb"
+        /></a>
+        <a href="data/Céges autók.rar"><p class="letoltesgomb2">Letöltés</p></a>
+        <li>
+          ㅤㅤㅤCéges autók
+          <!-- <p class="ceges">(2016. május)</p> -->
+        </li>
+        <a href="data/eUtazás.rar"
+          ><img
+            class="letoltesgomb"
+            src="images/letoltes.svg"
+            alt="Letöltés gomb"
+        /></a>
+        <a href="data/eUtazás.rar"><p class="letoltesgomb2">Letöltés</p></a>
+        <li>
+          ㅤㅤㅤeUtazás
+          <!-- <p class="eUtazas">(2016. május)</p> -->
+        </li>
+        <a href="data/Fogadóóra.rar"
+          ><img
+            class="letoltesgomb"
+            src="images/letoltes.svg"
+            alt="Letöltés gomb"
+        /></a>
+        <a href="data/Fogadóóra.rar"><p class="letoltesgomb2">Letöltés</p></a>
+        <li>ㅤㅤㅤFogadóóra</li>
+        <a href="data/Fürdő.rar"
+          ><img
+            class="letoltesgomb"
+            src="images/letoltes.svg"
+            alt="Letöltés gomb"
+        /></a>
+        <a href="data/Fürdő.rar"><p class="letoltesgomb2">Letöltés</p></a>
+        <li>ㅤㅤㅤFürdő</li>
+        <a href="data/Hiányzások.rar"
+          ><img
+            class="letoltesgomb"
+            src="images/letoltes.svg"
+            alt="Letöltés gomb"
+        /></a>
+        <a href="data/Hiányzások.rar"><p class="letoltesgomb2">Letöltés</p></a>
+        <li>ㅤㅤㅤHiányzások</li>
+        <a href="data/Kerítés.rar"
+          ><img
+            class="letoltesgomb"
+            src="images/letoltes.svg"
+            alt="Letöltés gomb"
+        /></a>
+        <a href="data/Kerítés.rar"><p class="letoltesgomb2">Letöltés</p></a>
+        <li>ㅤㅤㅤKerítés</li>
+        <a href="data/Társalgó.rar"
+          ><img
+            class="letoltesgomb"
+            src="images/letoltes.svg"
+            alt="Letöltés gomb"
+        /></a>
+        <a href="data/Társalgó.rar"><p class="letoltesgomb2">Letöltés</p></a>
+        <li>ㅤㅤㅤTársalgó</li>
+      </ul>
+    </div>
+
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>

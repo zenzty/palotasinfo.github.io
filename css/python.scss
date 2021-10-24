@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #007af3;
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+
+  .logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  nav {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    place-content: space-between;
+  }
+
+  .mobile-menu {
+    cursor: pointer;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #20272e;
+  height: 100vh;
+  padding: 1em;
+
+  ul.primary-nav {
+    margin-top: 5em;
+  }
+
+  li {
+    a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 0.5em;
+      font-size: 1.3em;
+      text-align: right;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.tartalom {
+  padding: 1em;
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .pythonlogo {
+    float: right;
+    margin-right: 2em;
+    margin-top: 1em;
+    width: 50px;
+    height: 50px;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+.letoltesek {
+  .elsoletoltes {
+    float: right;
+    margin-right: 4.7em;
+    margin-top: 1.3em;
+    width: 2.2em;
+    position: relative;
+    z-index: 998;
+    cursor: pointer;
+  }
+
+  .elsogomb {
+    display: none;
+    float: right;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    font-size: 1.4em;
+    border-radius: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-top: 0.8em;
+    margin-right: 4em;
+    position: relative;
+    z-index: 998;
+
+    &:hover {
+      background: var(--primary-color);
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  .letoltesgomb {
+    float: right;
+    margin-right: 4.7em;
+    margin-top: 1.2em;
+    width: 2.2em;
+    position: relative;
+    z-index: 998;
+    cursor: pointer;
+  }
+
+  .letoltesgomb2 {
+    display: none;
+    float: right;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    font-size: 1.4em;
+    border-radius: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin-top: 0.6em;
+    margin-right: 4em;
+    position: relative;
+    z-index: 998;
+
+    &:hover {
+      background: var(--primary-color);
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  li {
+    font-size: 1.2em;
+    padding: 1.3em;
+    color: black;
+    border: 1px solid rgb(68, 68, 68);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -0.2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 3em;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      background-image: url("../images/fajl.svg");
+      background-size: contain;
+      margin-right: 0;
+      left: 1.2em;
+      bottom: 1em;
+    }
+  }
+
+  /*   .otszaz {
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: -1.55em;
+    margin-right: 2em;
+    margin-left: 8em;
+    margin-bottom: 0em;
+    position: absolute;
+  }
+
+  .ceges {
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: -1.7em;
+    margin-right: 2em;
+    margin-left: 12.5em;
+    margin-bottom: 0em;
+    position: absolute;
+  }
+
+  .eUtazas {
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: -1.55em;
+    margin-right: 2em;
+    margin-left: 9em;
+    margin-bottom: 0em;
+    position: absolute;
+  } */
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+
+    ul {
+      display: flex;
+    }
+
+    a {
+      color: black;
+      font-size: 1em;
+      padding: 0.1em 1em;
+    }
+
+    ul.primary-nav {
+      margin: 0 2em;
+    }
+
+    li.current a {
+      font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  .tartalom {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  .letoltesek {
+    width: 1080px;
+    margin: 0 auto;
+
+    .elsoletoltes {
+      display: none;
+    }
+
+    .elsogomb {
+      display: grid;
+    }
+
+    .letoltesgomb {
+      display: none;
+    }
+
+    .letoltesgomb2 {
+      display: grid;
+    }
+  }
+}

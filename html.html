@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <link rel="stylesheet" href="css/html.css" />
+    <link rel="icon" type="image/png" sizes="16×16" href="Képek/tabicon.png" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="index.html">Palotas.<span>info</span></a>
+
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="Képek/menu.svg"
+          alt="Navigáció megnyitása"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="Képek/exit.svg"
+            alt="Navigáció bezárása"
+          />
+          <ul class="primary-nav">
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="python.html">Python</a></li>
+            <li class="current"><a href="html.html">HTML</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>
