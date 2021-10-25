@@ -84,6 +84,120 @@ nav li a:hover {
   cursor: pointer;
 }
 
+.tartalom {
+  padding: 1em;
+}
+
+.tartalom h1 {
+  font-size: 1.8em;
+}
+
+.tartalom .pythonlogo {
+  float: right;
+  margin-right: 2em;
+  margin-top: 1em;
+  width: 50px;
+  height: 50px;
+}
+
+.tartalom p {
+  font-size: 1em;
+}
+
+.letoltesek .elsoletoltes {
+  float: right;
+  margin-right: 4.7em;
+  margin-top: 1.3em;
+  width: 2.2em;
+  position: relative;
+  z-index: 998;
+  cursor: pointer;
+}
+
+.letoltesek .elsogomb {
+  display: none;
+  float: right;
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  font-weight: bold;
+  font-size: 1.4em;
+  border-radius: 5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin-top: 0.8em;
+  margin-right: 4em;
+  position: relative;
+  z-index: 998;
+}
+
+.letoltesek .elsogomb:hover {
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+.letoltesek .letoltesgomb {
+  float: right;
+  margin-right: 4.7em;
+  margin-top: 1.2em;
+  width: 2.2em;
+  position: relative;
+  z-index: 998;
+  cursor: pointer;
+}
+
+.letoltesek .letoltesgomb2 {
+  display: none;
+  float: right;
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  font-weight: bold;
+  font-size: 1.4em;
+  border-radius: 5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin-top: 0.6em;
+  margin-right: 4em;
+  position: relative;
+  z-index: 998;
+}
+
+.letoltesek .letoltesgomb2:hover {
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+.letoltesek li {
+  font-size: 1.2em;
+  padding: 1.3em;
+  color: black;
+  border: 1px solid #444444;
+  font-weight: bold;
+  border-radius: 5em;
+  margin-top: -0.2em;
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 3em;
+  position: relative;
+}
+
+.letoltesek li:before {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background-image: url("../images/fajl.svg");
+  background-size: contain;
+  margin-right: 0;
+  left: 1.2em;
+  bottom: 1em;
+}
+
 @media only screen and (min-width: 768px) {
   .mobile-menu,
   .mobile-menu-exit {
@@ -130,6 +244,28 @@ nav li a:hover {
   .container {
     width: 1080px;
     margin: 0 auto;
+  }
+  .tartalom {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .letoltesek {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .letoltesek .elsoletoltes {
+    display: none;
+  }
+  .letoltesek .elsogomb {
+    display: -ms-grid;
+    display: grid;
+  }
+  .letoltesek .letoltesgomb {
+    display: none;
+  }
+  .letoltesek .letoltesgomb2 {
+    display: -ms-grid;
+    display: grid;
   }
 }
 /*# sourceMappingURL=html.css.map */
